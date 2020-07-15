@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :buyings
+  resources :customers
   resources :dogs
   resources :books
   resources :authors
