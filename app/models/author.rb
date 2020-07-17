@@ -1,7 +1,5 @@
 class Author < ApplicationRecord
-  has_many :books, dependent: :destroy
+  has_many :books
 
-  after_save do
-    self.books.first.increment!(:name)
-  end
+  
 end
